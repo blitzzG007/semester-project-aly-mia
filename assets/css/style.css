@@ -1,0 +1,112 @@
+@import url('import/variables.css');
+
+@font-face {
+    font-family: 'Shanchez';
+    src: url('../font/Sanchez-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, 
+a {
+    font-family: var(--sec-font), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--sec-color);
+}
+
+/* Links */
+
+header {
+    padding: 10px 0;
+    background-color: var(--main-color);
+}
+
+.header-links, 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 70px;
+}
+.company {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+
+    .logo {
+        max-width: 75px;
+    }
+
+    .company-name {
+        font-size: 1.6rem;
+    }
+}
+
+.company-name {
+    font-family: var(--main-font), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-links ul li {
+    display: inline-flex;
+}
+
+.header-links .link {
+    margin-right: 50px;
+}
+
+.link {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+footer {
+    justify-content: center;
+    flex-direction: column;
+
+    .logo, p, .footer-links {
+        margin-bottom: 10px;
+    }
+    .footer-links {
+        display: flex;
+        gap: 15px;
+    }
+    .link {
+        font-size: 14px;
+    }
+}
+
+
+/* Home page */
+
+
+/* Explore page */
+
+
+/* Exhibition page */
+
+
+/* Visit page */
+
+
+/* About page */
+
+
+/* Events page */
+
+
+@media (min-width: 800px) {
+
+}
