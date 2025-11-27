@@ -17,10 +17,11 @@
     box-sizing: border-box;
 }
 
-body, 
-a {
+body {
     font-family: var(--sec-font), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--sec-color);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 /* Links */
@@ -61,6 +62,10 @@ footer {
 
 .header-links ul li {
     display: inline-flex;
+}
+
+a {
+    color: var(--sec-color);
 }
 
 .header-links .link {
