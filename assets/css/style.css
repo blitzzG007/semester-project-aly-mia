@@ -24,7 +24,7 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-/* Links */
+/* Links, WE can either have them here or in link.css file */ 
 
 header {
     padding: 10px 0;
@@ -41,19 +41,20 @@ footer {
 .logo {
     max-width: 70px;
 }
+
 .company {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-left: 30px;
+}
 
-    .logo {
-        max-width: 75px;
-    }
+.company .logo {
+    max-width: 75px;
+}
 
-    .company-name {
-        font-size: 1.6rem;
-    }
+.company .company-name {
+    font-size: 1.6rem;
 }
 
 .company-name {
@@ -80,21 +81,73 @@ a {
 footer {
     justify-content: center;
     flex-direction: column;
+}
 
-    .logo, p, .footer-links {
-        margin-bottom: 10px;
+footer .logo, 
+footer p, 
+footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+footer .link {
+    font-size: 14px
+}
+
+.cta {
+    color: var(--main-color);
+    background: var(--btn-color);
+    padding: 8px 20px;
+    border-radius: 20px;
+
+    & .bx {
+        margin-right: 5px;
+        transform: translateY(1.5px);
     }
-    .footer-links {
-        display: flex;
-        gap: 15px;
-    }
-    .link {
-        font-size: 14px;
-    }
+}
+.cta-blue {
+    background: var(--text-color);
 }
 
 
 /* Home page */
+.home {
+    background: rgba(0, 0, 0, .6) url('../img/science-museum.jpg') center center no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+#home {
+    margin-left: 3.8rem;
+    padding-left: 30px;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+}
+#home h2 {
+    font-size: 2.5rem;
+}
+
+#home .cta-links {
+    margin-top: 20px;
+}
+
+#home .cta {
+    font-size: 1.15rem;
+}
+
+#home .cta-links .cta-explore {
+    margin-left: 10px;
+}
 
 
 /* Explore page */
