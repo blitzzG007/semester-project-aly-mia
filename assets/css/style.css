@@ -123,6 +123,7 @@ footer .link {
     display: flex;
     align-items: center;
     height: 90vh;
+    position: relative;
 }
 
 #home {
@@ -147,6 +148,45 @@ footer .link {
 
 #home .cta-links .cta-explore {
     margin-left: 10px;
+}
+
+.science-line {
+    max-width: 40vw;
+    z-index: 0;
+}
+.line-1 {
+    position: absolute;
+    top: -160px;
+    left: -30px;
+    rotate: calc(-180deg);
+}
+.line-2 {
+    position: absolute;
+    top: -160px;
+    right: 355px;
+    rotate: calc(-165deg);
+    
+}
+.line-3 {
+    position: absolute;
+    top: -180px;
+    right: -125px;
+    rotate: calc(-155deg);
+}
+.line-4 {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+}
+.line-5 {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+}
+.line-6 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 
