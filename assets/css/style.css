@@ -124,6 +124,7 @@ footer .link {
     align-items: center;
     height: 90vh;
     position: relative;
+    overflow: hidden;
 }
 
 #home {
@@ -156,37 +157,21 @@ footer .link {
 }
 .line-1 {
     position: absolute;
-    top: -160px;
-    left: -30px;
-    rotate: calc(-180deg);
+    bottom: -195px;
+    left: -45px;
+    rotate: calc(13deg);
 }
 .line-2 {
     position: absolute;
-    top: -160px;
-    right: 355px;
-    rotate: calc(-165deg);
-    
+    bottom: -170px;
+    right: 30%;
+    rotate:calc(-7deg);
 }
 .line-3 {
     position: absolute;
-    top: -180px;
-    right: -125px;
-    rotate: calc(-155deg);
-}
-.line-4 {
-    position: absolute;
-    bottom: -100px;
-    left: 0;
-}
-.line-5 {
-    position: absolute;
-    bottom: 0;
-    right: 30%;
-}
-.line-6 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -185px;
+    right: -115px;
+    rotate: calc(5deg);
 }
 
 
@@ -197,6 +182,7 @@ footer .link {
 
 
 /* Visit page */
+
 
 
 /* About page */
