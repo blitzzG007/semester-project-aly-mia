@@ -1,4 +1,5 @@
 @import url('import/variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sanchez:ital@0;1&display=swap');
 
 @font-face {
     font-family: 'Shanchez';
@@ -10,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 *::before,
@@ -24,14 +26,14 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-/* Links, WE can either have them here or in link.css file */ 
+/* Links, WE can either have them here or in link.css file */
 
 header {
     padding: 10px 0;
     background-color: var(--main-color);
 }
 
-.header-links, 
+.header-links,
 footer {
     display: flex;
     justify-content: space-between;
@@ -83,8 +85,8 @@ footer {
     flex-direction: column;
 }
 
-footer .logo, 
-footer p, 
+footer .logo,
+footer p,
 footer .footer-links {
     margin-bottom: 10px;
 }
@@ -109,10 +111,34 @@ footer .link {
         transform: translateY(1.5px);
     }
 }
+
 .cta-blue {
     background: var(--text-color);
 }
 
+.heading {
+    font-size: 3.1rem;
+    letter-spacing: 15px;
+}
+
+.number,
+.time,
+.day {
+    font-weight: 500;
+}
+
+/* Scroll behavior */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--sec-color);
+}
 
 /* Home page */
 .home {
@@ -135,6 +161,7 @@ footer .link {
 #home h1 {
     font-size: 3.5rem;
 }
+
 #home h2 {
     font-size: 2.5rem;
 }
@@ -155,18 +182,21 @@ footer .link {
     max-width: 40vw;
     z-index: 0;
 }
+
 .line-1 {
     position: absolute;
     bottom: -195px;
     left: -45px;
     rotate: calc(13deg);
 }
+
 .line-2 {
     position: absolute;
     bottom: -170px;
     right: 30%;
-    rotate:calc(-7deg);
+    rotate: calc(-7deg);
 }
+
 .line-3 {
     position: absolute;
     bottom: -185px;
@@ -296,8 +326,216 @@ footer .link {
     margin-bottom: 60px;
 }
 /* Visit page */
+#visit-title {
+    background: rgba(0, 0, 0, .6) url(../img/museum-visit.jpg) center center no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    height: 450px;
+}
 
+.place-categories{
+    background: var(--text-color);
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
 
+.places {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.place-1::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 75px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.place-2::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 137px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.place-3::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 208px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.place-4::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 102px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+#location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: var(--third-color);
+    padding-bottom: 50px;
+}
+
+#location h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 1.3rem 0;
+    letter-spacing: 3.5px;
+}
+
+.location-categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+iframe {
+    max-width: 50vw;
+    height: 350px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+}
+
+.address-hrs-contact>.category {
+    margin: 15px 0;
+}
+
+.category h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.day-time {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.day-time p,
+.contact-info p {
+    margin: 6px 0;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    transform: translateY(-3px);
+}
+
+#cafe-shop {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 70px 6.5rem;
+}
+
+.cafe img,
+.shop img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.shop img {
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.cafe,
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--sec-color);
+    color: var(--main-color);
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .6);
+    transition: 0.3s ease-in-out;
+}
+
+.cafe:hover,
+.shop:hover {
+    scale: 1.02;
+}
+
+.cafe-description,
+.shop-description {
+    width: 60%;
+    height: 100%;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cafe-description h4,
+.shop-description h4 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cafe-description p,
+.shop-description p {
+    font-weight: 350;
+}
+
+#admission-accessibility {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+    background: var(--third-color);
+    padding: 20px 40px;
+    margin: 80px 3.5rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.admission,
+.accessibility {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.admission h2,
+.accessibility h2 {
+    margin-bottom: 10px;
+}
 
 /* About page */
 
@@ -305,6 +543,25 @@ footer .link {
 /* Events page */
 
 
-@media (min-width: 800px) {
 
+@media (min-width: 800px) {
+    /* Links */
+
+
+    /* Home page */
+
+
+    /* Explore page */
+
+
+    /* Exhibition page */
+
+
+    /* Visit page */
+
+
+    /* About page */
+
+
+    /* Events page */
 }
