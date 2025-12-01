@@ -212,7 +212,7 @@ footer .link {
 
 
 /* Visit page */
-.visit-title {
+#visit-title {
     background: rgba(0, 0, 0, .6) url(../img/museum-visit.jpg) center center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
@@ -223,13 +223,60 @@ footer .link {
     height: 450px;
 }
 
-.place-categories {
+.place-categories{
     background: var(--text-color);
     color: var(--main-color);
     display: flex;
     justify-content: center;
-    gap: 30px;
     padding: 10px 0;
+}
+
+.places {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.place-1::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 75px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.place-2::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 137px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.place-3::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 208px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.place-4::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 102px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
 }
 
 #location {
@@ -356,7 +403,7 @@ iframe {
     gap: 40px;
     background: var(--third-color);
     padding: 20px 40px;
-    margin: 0 3.5rem;
+    margin: 80px 3.5rem;
     overflow: hidden;
     object-fit: cover;
 }
