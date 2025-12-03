@@ -33,7 +33,7 @@ header {
     background-color: var(--main-color);
 }
 
-.header-links,
+.navbar,
 footer {
     display: flex;
     justify-content: space-between;
@@ -63,16 +63,33 @@ footer {
     font-family: var(--main-font), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header-links ul li {
-    display: inline-flex;
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--text-color);
+    position: absolute;
+    left: -5px;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 69%;
 }
 
 a {
     color: var(--sec-color);
 }
 
-.header-links .link {
+.navbar .link {
     margin-right: 50px;
+    transition: all 0.3s ease-out;
 }
 
 .link {
@@ -80,9 +97,14 @@ a {
     font-weight: 500;
 }
 
+.active {
+    color: var(--text-color);
+}
+
 footer {
     justify-content: center;
     flex-direction: column;
+    padding: 20px 0;
 }
 
 footer .logo,
@@ -101,15 +123,17 @@ footer .link {
 }
 
 .cta {
+    font-size: 1.05rem;
     color: var(--main-color);
     background: var(--btn-color);
     padding: 8px 20px;
+    border: none;
     border-radius: 20px;
+}
 
-    & .bx {
-        margin-right: 5px;
-        transform: translateY(1.5px);
-    }
+.bx {
+    margin-right: 5px;
+    transform: translateY(1.5px);
 }
 
 .cta-blue {
@@ -141,75 +165,10 @@ footer .link {
     background: var(--sec-color);
 }
 
-/* Home page */
-.home {
-    background: rgba(0, 0, 0, .6) url('../img/science-museum.jpg') center center no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    color: var(--main-color);
-    display: flex;
-    align-items: center;
-    height: 90vh;
-    position: relative;
-    overflow: hidden;
-}
-
-#home {
-    margin-left: 3.8rem;
-    padding-left: 30px;
-}
-
-#home h1 {
-    font-size: 3.5rem;
-}
-
-#home h2 {
-    font-size: 2.5rem;
-}
-
-#home .cta-links {
-    margin-top: 20px;
-}
-
-#home .cta {
-    font-size: 1.15rem;
-}
-
-#home .cta-links .cta-explore {
-    margin-left: 10px;
-}
-
-.science-line {
-    max-width: 40vw;
-    z-index: 0;
-}
-
-.line-1 {
-    position: absolute;
-    bottom: -195px;
-    left: -45px;
-    rotate: calc(13deg);
-}
-
-.line-2 {
-    position: absolute;
-    bottom: -170px;
-    right: 30%;
-    rotate: calc(-7deg);
-}
-
-.line-3 {
-    position: absolute;
-    bottom: -185px;
-    right: -115px;
-    rotate: calc(5deg);
-}
-
-
 
 /* Explore page */
 .explore-page {
-    background: rgba(0, 0, 0, .6) url('../img/explore-background.jpg') center no-repeat;
+    background: rgba(0, 0, 0, 0.6) url('../img/explore-background.jpg') center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     color: var(--main-color);
@@ -347,222 +306,6 @@ footer .link {
 }
 
 
-
-/* Visit page */
-#visit-title {
-    background: rgba(0, 0, 0, .6) url(../img/museum-visit.jpg) center center no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--main-color);
-    height: 450px;
-}
-
-.place-categories {
-    background: var(--text-color);
-    color: var(--main-color);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.places {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    position: relative;
-}
-
-.place-1::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 75px;
-    width: 5px;
-    height: 5px;
-    background: var(--main-color);
-    border-radius: 50%;
-}
-
-.place-2::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 137px;
-    width: 5px;
-    height: 5px;
-    background: var(--main-color);
-    border-radius: 50%;
-}
-
-.place-3::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    right: 208px;
-    width: 5px;
-    height: 5px;
-    background: var(--main-color);
-    border-radius: 50%;
-}
-
-.place-4::after {
-    content: '';
-    position: absolute;
-    top: 8px;
-    right: 102px;
-    width: 5px;
-    height: 5px;
-    background: var(--main-color);
-    border-radius: 50%;
-}
-
-#location {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background: var(--third-color);
-    padding-bottom: 50px;
-}
-
-#location h2 {
-    font-size: 1.7rem;
-    font-weight: 500;
-    margin: 1.3rem 0;
-    letter-spacing: 3.5px;
-}
-
-.location-categories {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-iframe {
-    max-width: 50vw;
-    height: 350px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
-}
-
-.address-hrs-contact>.category {
-    margin: 15px 0;
-}
-
-.category h4 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-}
-
-.day-time {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.day-time p,
-.contact-info p {
-    margin: 6px 0;
-}
-
-.phone {
-    display: flex;
-    justify-content: center;
-    gap: 3px;
-    transform: translateY(-3px);
-}
-
-#cafe-shop {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: 70px 6.5rem;
-}
-
-.cafe img,
-.shop img {
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-}
-
-.shop img {
-    border-radius: 8px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-}
-
-.cafe,
-.shop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--sec-color);
-    color: var(--main-color);
-    height: 250px;
-    border-radius: 8px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .6);
-    transition: 0.3s ease-in-out;
-}
-
-.cafe:hover,
-.shop:hover {
-    scale: 1.02;
-}
-
-.cafe-description,
-.shop-description {
-    width: 60%;
-    height: 100%;
-    padding: 10px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.cafe-description h4,
-.shop-description h4 {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.cafe-description p,
-.shop-description p {
-    font-weight: 350;
-}
-
-#admission-accessibility {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 40px;
-    background: var(--third-color);
-    padding: 20px 40px;
-    margin: 80px 3.5rem;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.admission,
-.accessibility {
-    flex: 1;
-    padding: 20px;
-    margin: 10px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.admission h2,
-.accessibility h2 {
-    margin-bottom: 10px;
-}
-
 /* About page */
 .about-us-subheader {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/andrew-ruiz.jpg');
@@ -606,15 +349,10 @@ iframe {
     background-color: #1B263B;
 }
 
-/* Events page */
-
 
 
 @media (min-width: 800px) {
     /* Links */
-
-
-    /* Home page */
 
 
     /* Explore page */
@@ -623,11 +361,7 @@ iframe {
     /* Exhibition page */
 
 
-    /* Visit page */
-
-
     /* About page */
 
 
-    /* Events page */
 }
