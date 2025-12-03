@@ -341,9 +341,10 @@ footer .link {
 }
 .get-involved-about h2 {
    color: #fff !important;
+   transform: translateX(550px);
    padding: 15px 0;
    margin-bottom: 20px;
-  
+    text-align: left;
 }
 .get-involved-about {
     background-color: transparent !important;
@@ -389,7 +390,7 @@ footer .link {
     margin-bottom: 20px;
 }
 .about-us-images {
-    width: 280px;
+    width: 500px;
     height: auto;
     object-fit: cover;
     flex-shrink: 0;
@@ -445,6 +446,7 @@ footer .link {
 
 .contact-form button:hover {
     background-color: #0250c0;
+    transform: scaleX(1.2);
 }
 
 
