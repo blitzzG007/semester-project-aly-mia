@@ -324,29 +324,51 @@ footer .link {
     max-width: 800px;
     margin: 0 auto;
 }
+.about-us-intro {
+    text-align: center;
+    width: 550px;
+    margin: 0px auto 60px auto;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    color: #1B263B;
+}
+.about-us-intro h2 {
+    font-size: 2rem;
+    color: #0265E3;
+    margin-bottom: 20px;
+    text-align: center;
+}
 .get-involved-about h2 {
    color: #fff;
    text-align: center;
    background-color:#1B263B;
    padding: 15px 0;
 }
+.about-us-middle-section > div {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 .about-us-middle-section h2 {
     font-size: 2rem;
-    color:#0265E3;
+    color: #0265E3;
     margin-bottom: 20px;
     text-align: left;
-  
 }
 
 .about-us-middle-section p {
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     text-align: left;
-    background-color: #fff;
+    color: #1B263B;
 }
+
 .about-us-middle-section {
     background-color: #1B263B;
+    padding: 40px 20px;
+    margin-top: -70px;
 }
 
 
