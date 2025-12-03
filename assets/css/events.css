@@ -1,0 +1,135 @@
+#events {
+    background: var(--sec-color);
+    color: var(--main-color);
+}
+
+#events-title {
+    background: rgba(0, 0, 0, 0.65) url('../img/events-background.jpg') center center no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-categories {
+    margin: 40px 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column-reverse;
+    background: var(--main-color);
+    color: var(--sec-color);
+    height: auto;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.events:hover {
+    scale: 1.03;
+}
+
+.events img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 1.5px solid var(--main-color);
+}
+
+.events-text {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.events-text h2 {
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.events-text p {
+    font-size: 1rem;
+}
+
+.book-tour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    margin-bottom: 10px;
+}
+
+#form-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#form-wrapper h2 {
+    font-size: 1.85rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.input-container,
+.input-item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.input-item {
+    gap: 0;
+}
+
+.form-container label {
+    margin-bottom: 9px;
+}
+
+.input-container input,
+.input-container select,
+.input-container textarea {
+    width: 350px;
+    padding: 8px;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.437);
+    border-radius: 8px;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.date,
+.time {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-time input {
+    width: 100px;
+}
+
+.form-container .cta {
+    padding: 8px 30px;
+    margin-top: 10px;
+}

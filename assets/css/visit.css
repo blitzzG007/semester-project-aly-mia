@@ -1,0 +1,218 @@
+#visit-title {
+    background: rgba(0, 0, 0, 0.6) url(../img/museum-visit.jpg) center center no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    height: 450px;
+}
+
+.place-categories {
+    background: var(--text-color);
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.places {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.place-1::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 75px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.place-2::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 137px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.place-3::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 208px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.place-4::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 102px;
+    width: 5px;
+    height: 5px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+#location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: var(--third-color);
+    padding-bottom: 50px;
+}
+
+#location h2 {
+    font-size: 1.85rem;
+    font-weight: 500;
+    margin: 1.3rem 0;
+    letter-spacing: 3.5px;
+}
+
+.location-categories {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    margin: 0 2.5rem;
+}
+
+iframe {
+    max-width: 100%;
+    height: 350px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.address-hrs-contact>.category {
+    margin: 15px 0;
+}
+
+.category h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.day-time {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.day-time p,
+.contact-info p {
+    margin: 6px 0;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    transform: translateY(-3px);
+}
+
+#cafe-shop {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 1.5rem;
+}
+
+.cafe,
+.shop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--sec-color);
+    color: var(--main-color);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+    transition: 0.3s ease-in-out;
+}
+
+ .shop {
+    flex-direction: column-reverse;
+}
+
+.cafe img,
+.shop img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+}
+
+.shop img {
+    border-radius: 8px;
+    border-top-right-radius: 0;
+}
+
+.cafe:hover,
+.shop:hover {
+    scale: 1.02;
+}
+
+.cafe-text,
+.shop-text {
+    width: 100%;
+    padding: 20px 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cafe-text h4,
+.shop-text h4 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cafe-text p,
+.shop-text p {
+    font-weight: 350;
+}
+
+#admission-accessibility {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background: var(--third-color);
+    padding: 20px;
+    margin: 30px 1.5rem;
+    margin-bottom: 80px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.admission,
+.accessibility {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.admission h2,
+.accessibility h2 {
+    margin-bottom: 10px;
+}
