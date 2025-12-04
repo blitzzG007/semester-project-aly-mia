@@ -2,9 +2,8 @@
     background: rgba(0, 0, 0, 0.6) url(../img/museum-visit.jpg) center center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     color: var(--main-color);
     height: 450px;
 }

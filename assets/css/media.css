@@ -35,7 +35,24 @@
 
 
     /* Exhibition page */
+        .exhibition {
+        margin: 30px 6.5rem;
+    }
 
+    .exhibition-textbox {
+        flex-direction: row;
+        height: 450px;
+        margin: 50px 0;
+    }
+
+    .exhibition-textbox img {
+        width: 30%;
+        height: 100%;
+    }
+
+    .exhibition-text {
+        width: 70%;
+    }
 
     /* Visit page */
     .location-categories {

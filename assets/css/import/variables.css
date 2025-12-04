@@ -1,12 +1,13 @@
 :root {
     /* Color */
-    --main-color: #fff;
+    --main-color: #ffffff;
     --sec-color: #1b263b;
     --third-color: #eae8e8;
     --fourth-color: #6fabdd;
     --text-color: #0265e3;
-    --btn-color: #0ab535;
+    --btn-color: #018601;
     --input-color: #fafafa;
+
 
     /* Font */
     --main-font: "Shanchez";
