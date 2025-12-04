@@ -255,66 +255,6 @@ footer .link {
 
 
 
-/* Exhibition page */
-#exhibition-title {
-    background: rgba(0, 0, 0, 0.6) url("../img/exhibition.jpg") center center no-repeat;
-    background-blend-mode: darken;
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.exhibition {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 6.5rem;
-}
-
-.exhibition-textbox {
-    background: var(--sec-color);
-    margin: 50px 0;
-    max-width: 100%;
-    height: 450px;
-    color: var(--main-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.exhibition-textbox2 {
-    background-color: var(--fourth-color);
-}
-
-.exhibition-textbox img {
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.exhibition-text {
-    width: 70%;
-    height: auto;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.exhibition-text h2 {
-    font-size: 2.1rem;
-    margin-bottom: 20px;
-}
-
-.exhibition-text p {
-    font-size: 1.2rem;
-}
-
-
 /* About page */
 .about-us-subheader {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/andrew-ruiz.jpg');
@@ -462,9 +402,6 @@ footer .link {
 
 
     /* Explore page */
-
-
-    /* Exhibition page */
 
 
     /* About page */
