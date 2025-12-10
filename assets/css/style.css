@@ -269,64 +269,114 @@ footer .link {
     color: var(--main-color);
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 40px 60px;
     position: relative;
+    justify-content: center;
 }
 
 .explore-header {
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .explore-image1 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    margin: 20px 0;
+    margin: 10px;
+    flex-shrink: 0;
 }
 
 .explore-image2 {
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: auto;
+    min-height: 200px;
     object-fit: cover;
-    margin: 20px 0;
+    margin: 10px;
+    flex-shrink: 0;
 }
 
 .explore-textbox {
     background-color: #fff;
-    margin: 20px auto;
-    padding: 0 0 0 10px;
-    max-width: 700px;
-    flex: 1;
-    min-width: 400px;
+    margin: 5px;
+    padding: 15px;
+    max-width: 480px;
+    flex: 1 1 420px;
+    min-width: 380px;
     color: #1B263B;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     overflow: hidden;
+    align-items: flex-start;
+}
+
+.explore-textbox h2 {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+
+.explore-textbox p {
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .explore-textbox h2,
 .explore-textbox p {
-    padding-right: 20px;
+    padding-right: 10px;
+}
+
+.explore-textbox>div {
+    max-width: 280px;
 }
 
 .explore-textbox2 {
     background-color: #fff;
-    margin: 20px auto;
-    padding: 0 0 0 10px;
+    margin: 5px;
+    padding: 15px;
     width: 100%;
+    max-width: 980px;
     color: #1B263B;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     overflow: hidden;
+    align-items: flex-start;
+}
+
+.explore-textbox2 h2 {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+
+.explore-textbox2 p {
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .explore-textbox2 h2,
 .explore-textbox2 p {
-    padding-right: 20px;
+    padding-right: 10px;
+}
+
+.kids-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.kids-right-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+.kids-right-column p {
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .explore-textbox a,
@@ -338,6 +388,7 @@ footer .link {
 .explore-textbox2 h2 {
     color: #0265E3;
 }
+
 
 
 @media (min-width: 800px) {
