@@ -50,7 +50,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .company .logo {
@@ -110,6 +110,7 @@ a {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 
 .menu {
@@ -270,7 +271,7 @@ footer .link {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 40px 60px;
+    padding: 4.5rem 60px;
     position: relative;
     justify-content: center;
 }
@@ -393,6 +394,10 @@ footer .link {
 
 @media (min-width: 800px) {
     /* Links */ 
+    .company {
+        margin-left: 30px;
+    }
+
     .menu {
         display: none;
     }
