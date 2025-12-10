@@ -105,6 +105,10 @@
     }
 
     /* About page */
+    .about-us-text {
+        width: 50%;
+    }
+    
     #about-us-involment {
         gap: 60px;
     }

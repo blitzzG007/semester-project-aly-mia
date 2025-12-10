@@ -17,14 +17,20 @@
 }
 
 .about-us {
-    width: 550px;
-    margin: 0px auto 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 40px 20px;
     margin-bottom: 40px;
     color: var(--sec-color);
     font-size: 1.1rem;
 }
-.about-us h2 {
+
+.about-us-text {
+    width: 100%;
+}
+
+.about-us-text h2 {
     font-size: 1.5rem;
     color: var(--text-color);
     margin-bottom: 20px;
