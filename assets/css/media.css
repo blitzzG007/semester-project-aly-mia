@@ -1,6 +1,44 @@
 @media (min-width: 800px) {
     /* Links */
+    .company {
+        margin-left: 30px;
+    }
 
+    .menu {
+        display: none;
+    }
+
+    .header-links {
+        display: block;
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: var(--text-color);
+        position: absolute;
+        left: -5px;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover::after {
+        width: 69%;
+    }
+
+    .link {
+        font-size: 1.15rem;
+    }
 
     /* Home page */
     #home {
@@ -105,6 +143,10 @@
     }
 
     /* About page */
+    .about-us-text {
+        width: 50%;
+    }
+    
     #about-us-involment {
         gap: 60px;
     }
