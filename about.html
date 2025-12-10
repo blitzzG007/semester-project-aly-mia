@@ -9,6 +9,10 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/about.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
@@ -26,38 +30,43 @@
           /></a>
           <a href="index.html" class="company-name">CSM</a>
         </div>
-        <ul>
-          <li>
-            <a href="index.html" class="link">Home</a>
-          </li>
-          <li>
-            <a href="explore.html" class="link">Explore</a>
-          </li>
-          <li>
-            <a href="exhibition.html" class="link">Exhibiton</a>
-          </li>
-          <li>
-            <a href="visit.html" class="link">Visit</a>
-          </li>
-          <li>
-            <a href="about.html" class="link active">About</a>
-          </li>
-          <li>
-            <a href="events.html" class="link">Events</a>
-          </li>
-        </ul>
+        <label for="menu-check" class="menu">
+          <i class='bx bx-menu'></i>
+        </label>
+        <input type="checkbox" id="menu-check">
+        <nav class="header-links">
+          <ul>
+            <li>
+              <a href="index.html" class="link">Home</a>
+            </li>
+            <li>
+              <a href="explore.html" class="link">Explore</a>
+            </li>
+            <li>
+              <a href="exhibition.html" class="link">Exhibiton</a>
+            </li>
+            <li>
+              <a href="visit.html" class="link">Visit</a>
+            </li>
+            <li>
+              <a href="about.html" class="link active">About</a>
+            </li>
+            <li>
+              <a href="events.html" class="link">Events</a>
+            </li>
+          </ul>
+        </nav>
       </nav>
-      <nav></nav>
     </header>
     <main>
-      <section class="about-us-subheader">
-        <div>
-          <h1>ABOUT US</h1>
+      <section id="about-us-title">
+        <div class="title">
+          <h1 class="heading">ABOUT US</h1>
         </div>
       </section>
-      <section class="about-us-intro">
+      <section class="about-us">
         <div>
-          <h2>Explore together</h2>
+          <h2>"Explore together"</h2>
           <p>
             The Community Science Museum is a place where curiosity comes alive.
             Our mission is to make science accessible, exciting, and interactive
@@ -81,12 +90,10 @@
           </p>
         </div>
       </section>
-      <section class="about-us-middle-section">
-        <div class="get-involved-about">
+      <section id="about-us-involment">
           <h2>Get involved</h2>
-        </div>
-        <div>
-          <div>
+        <div class="get-involved">
+          <div class="get-involved-text">
             <h2>Support</h2>
             <p>
               There are various ways you can support the museum. Donations are
@@ -94,7 +101,7 @@
               accessible to the whole community. You can also support us by
               donating items of interest to the museum's collections. If you
               have some item or collection that you think others would enjoy,
-              please let us know by contacting our Collections Department and
+              please let us know by contacting our <strong>Collections Department</strong> and
               they will be able to assist you.
             </p>
           </div>
@@ -104,8 +111,8 @@
             alt="Two people standing close to eachother by a teachers board that has the solar system drawn on it "
           />
         </div>
-        <div>
-          <div>
+        <div class="get-involved">
+          <div class="get-involved-text">
             <h2>Internship</h2>
             <p>
               Are you interested in working in a museum? Do you enjoy the fun
@@ -122,8 +129,8 @@
             alt="A researcher in a lab coat and safety glasses kneels at an open vacuum chamber, adjusting a small instrument inside the illuminated chamber filled with precision optical and mechanical components."
           />
         </div>
-        <div>
-          <div>
+        <div class="get-involved">
+          <div class="get-involved-text">
             <h2>Volunteer</h2>
             <p>
               A number of people volunteer their time and effort to keep the
@@ -144,27 +151,35 @@
           />
         </div>
       </section>
-      <section class="contact-form">
-        <h2>Contact us</h2>
-        <div>
-          <label for="full-name">Full Name:</label>
-          <input type="text" id="full-name" name="full-name" required />
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required />
-        </div>
-        <div>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
+
+      <section id="contact">
+        <div id="form-wrapper">
+          <h2>BOOK TOUR</h2>
+          <form class="form-container">
+            <div class="input-container">
+              <div class="input-item">
+                <label for="name">Full Name:</label>
+                <input type="text" name="full-name" id="name" required />
+              </div>
+    
+              <div class="input-item">
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+    
+              <div class="input-item">
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
+    
+              <div class="input-item">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="7"></textarea>
+              </div>
+            </div>
+            <input class="cta" type="submit" value="Book Tour" />
+          </form>
+        </section>
       </section>
     </main>
     <footer>
