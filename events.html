@@ -30,6 +30,10 @@
           /></a>
           <a href="index.html" class="company-name">CSM</a>
         </div>
+        <label for="menu-check" class="menu">
+          <i class='bx bx-menu'></i>
+        </label>
+        <input type="checkbox" id="menu-check">
         <nav class="header-links">
           <ul>
             <li>
@@ -133,22 +137,22 @@
             <div class="input-container">
               <div class="input-item">
                 <label for="name">Full Name:</label>
-                <input type="text" name="full-name" id="name" />
+                <input type="text" name="full-name" id="name" required />
               </div>
     
               <div class="input-item">
                 <label for="email">Email address:</label>
-                <input type="email" name="email" id="email"">
+                <input type="email" name="email" id="email" required />
               </div>
     
               <div class="input-item">
                 <label for="phone">Phone:</label>
-                <input type="phone" name="phone" id="phone" />
+                <input type="tel" name="phone" id="phone" required />
               </div>
     
               <div class="input-item">
                 <label for="event">Book Event:</label>
-                <select name="event" id="event">
+                <select name="event" id="event" required>
                   <option value="Event">Event..</option>
                   <option value="event-1">Visiting Professor of Aeronautics</option>
                   <option value="event-2">Robotic Labs</option>
@@ -159,7 +163,7 @@
     
               <div class="input-item">
                 <label for="tour">Tour:</label>
-                <select name="tour" id="tour">
+                <select name="tour" id="tour" required>
                   <option value="Book Tour">Book Tour..</option>
                   <option value="Morning Tour">Morning Tour</option>
                   <option value="Afternoon Tour">Afternoon Tour</option>
@@ -171,11 +175,11 @@
               <div class="input-item date-time">
                 <div class="date">
                   <label for="date">Date:</label>
-                  <input type="date" name="date" id="date" />
+                  <input type="date" name="date" id="date" required />
                 </div>
                 <div class="date">
                   <label for="time">Time:</label>
-                  <input type="time" name="time" id="time" />
+                  <input type="time" name="time" id="time" required />
                 </div>
               </div>
     

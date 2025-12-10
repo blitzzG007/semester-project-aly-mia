@@ -31,6 +31,7 @@ body {
 header {
     padding: 10px 0;
     background-color: var(--main-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
 }
 
 .navbar,
@@ -38,6 +39,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -64,23 +66,8 @@ footer {
 }
 
 .navbar ul li {
-    display: inline-block;
-    position: relative;
-}
-
-.navbar ul li::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background-color: var(--text-color);
-    position: absolute;
-    left: -5px;
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-.navbar ul li:hover::after {
-    width: 69%;
+    display: block;
+    padding: 20px 0;
 }
 
 a {
@@ -92,13 +79,45 @@ a {
     transition: all 0.3s ease-out;
 }
 
+.navbar .link:hover{
+    color: var(--text-color);
+}
+
 .link {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .active {
     color: var(--text-color);
+}
+
+#menu-check, 
+.header-links {
+    display: none;
+}
+
+#menu-check:checked~.header-links {
+    display: block;
+}
+
+.header-links {
+    position: absolute;
+    top: 64px;
+    text-align: center;
+    width: 100%;
+    background: var(--main-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    margin-right: 10px;
+}
+
+.bx-menu {
+    font-size: 2.2rem;
 }
 
 footer {
@@ -150,7 +169,7 @@ footer .link {
 }
 
 .heading {
-    font-size: 3.1rem;
+    font-size: 2.3rem;
     letter-spacing: 15px;
     color: var(--main-color);
 }
@@ -159,6 +178,73 @@ footer .link {
 .time,
 .day {
     font-weight: 500;
+}
+
+#form-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#form-wrapper h2 {
+    font-size: 1.85rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.input-container,
+.input-item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.input-item {
+    gap: 0;
+}
+
+.form-container label {
+    margin-bottom: 9px;
+}
+
+.input-container input,
+.input-container select,
+.input-container textarea {
+    width: 350px;
+    padding: 8px;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.437);
+    border-radius: 8px;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.date,
+.time {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-time input {
+    width: 100px;
+}
+
+.form-container .cta {
+    padding: 8px 30px;
+    margin-top: 10px;
 }
 
 /* Scroll behavior */
@@ -305,157 +391,45 @@ footer .link {
 
 
 
-
-/* About page */
-.about-us-subheader {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/andrew-ruiz.jpg');
-    background-position: center center, center center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 800px auto, 800px auto;
-    height: 400px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--main-color);
-}
-.about-us-content {
-    max-width: 800px;
-    margin: 0 auto;
-    gap: 20px;
-}
-.about-us-intro {
-    text-align: left;
-    width: 550px;
-    margin: 0px auto 60px auto;
-    padding: 40px 20px;
-    margin-bottom: 40px;
-    color: var(--sec-color);
-    font-size: 1.1rem;
-}
-.about-us-intro h2 {
-    font-size: 2rem;
-    color: var(--text-color);
-    margin-bottom: 20px;
-    text-align: center;
-}
-.get-involved-about h2 {
-   color: var(--main-color) !important;
-   transform: translateX(550px);
-   padding: 15px 0;
-   margin-bottom: 20px;
-}
-.get-involved-about {
-    background-color: transparent !important;
-    padding: 0 !important;
-    margin-bottom: 20px;
-   margin-left: 60px;
-}
-.about-us-middle-section > div {
-    background: var(--main-color);
-    padding: 0;
-    margin-bottom: 20px;
-    display: flex;
-    gap: 0;
-    align-items: stretch;
-    overflow: hidden;
-}
-
-.about-us-middle-section > div > div {
-    flex: 1;
-    padding: 30px;
-}
-
-.about-us-middle-section h2 {
-    font-size: 2rem;
-    color: var(--text-color);
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.about-us-middle-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: left;
-    color: var(--sec-color);
-    max-width: 500px;
-}
-
-.about-us-middle-section {
-    background: var(--sec-color);
-    padding: 40px 100px;
-    margin-top: -20px;
-    margin-bottom: 20px;
-}
-.about-us-images {
-    width: 500px;
-    height: auto;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.contact-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.contact-form h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: var(--sec-color);
-    margin-bottom: 30px;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--sec-color);
-    font-size: 0.9rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form button {
-    background-color: var(--text-color);
-    color: var(--main-color);
-    padding: 10px 30px;
-    border: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-}
-
-.contact-form button:hover {
-    background-color: #2365c2;
-}
-
-
 @media (min-width: 800px) {
-    /* Links */
+    /* Links */ 
+    .menu {
+        display: none;
+    }
 
+    .header-links {
+        display: block;
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: var(--text-color);
+        position: absolute;
+        left: -5px;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover::after {
+        width: 69%;
+    }
+
+    .link {
+        font-size: 1.15rem;
+    }
 
     /* Explore page */
-
-
-    /* About page */
 
 
 }
