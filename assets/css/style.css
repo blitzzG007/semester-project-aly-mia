@@ -389,9 +389,6 @@ footer .link {
     color: #0265E3;
 }
 
-
-
-
 /* About page */
 .about-us-subheader {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/andrew-ruiz.jpg');
@@ -528,6 +525,36 @@ footer .link {
     display: block;
     margin: 0 auto;
 }
+
+@media (min-width: 800px) {
+    /* Links */ 
+    .menu {
+        display: none;
+    }
+
+    .header-links {
+        display: block;
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: var(--text-color);
+        position: absolute;
+        left: -5px;
+        bottom: -10px;
+        transition: 0.5s;
+    }
 
     .navbar ul li:hover::after {
         width: 69%;
