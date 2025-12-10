@@ -124,6 +124,7 @@ footer .link {
 
 .cta {
     font-size: 1.05rem;
+    font-weight: 500;
     color: var(--main-color);
     background: var(--btn-color);
     padding: 8px 20px;
@@ -131,13 +132,21 @@ footer .link {
     border-radius: 20px;
 }
 
+.cta:hover {
+    background: #07a407;
+}
+
 .bx {
     margin-right: 5px;
     transform: translateY(1.5px);
 }
 
-.cta-blue {
-    background: var(--text-color);
+.cta-explore {
+    background: #085fd2;
+}
+
+.cta-explore:hover {
+    background: #0c72f6;
 }
 
 .heading {
@@ -174,65 +183,114 @@ footer .link {
     color: var(--main-color);
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 40px 60px;
     position: relative;
+    justify-content: center;
 }
 
 .explore-header {
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .explore-image1 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    margin: 20px 0;
+    margin: 10px;
+    flex-shrink: 0;
 }
 
 .explore-image2 {
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: auto;
+    min-height: 200px;
     object-fit: cover;
-    margin: 20px 0;
+    margin: 10px;
+    flex-shrink: 0;
 }
 
 .explore-textbox {
     background-color: #fff;
-    margin: 20px auto;
-    padding: 20px 0 0 10px;
-    max-width: 700px;
-    flex: 1;
-    min-width: 400px;
+    margin: 5px;
+    padding: 15px;
+    max-width: 480px;
+    flex: 1 1 420px;
+    min-width: 380px;
     color: #1B263B;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     overflow: hidden;
+    align-items: flex-start;
+}
+
+.explore-textbox h2 {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+
+.explore-textbox p {
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .explore-textbox h2,
 .explore-textbox p {
-    padding-right: 20px;
-    gap: 10px;
+    padding-right: 10px;
+}
+
+.explore-textbox>div {
+    max-width: 280px;
 }
 
 .explore-textbox2 {
     background-color: #fff;
-    margin: 20px auto;
-    padding: 20px 0 0 10px;
+    margin: 5px;
+    padding: 15px;
     width: 100%;
+    max-width: 980px;
     color: #1B263B;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     overflow: hidden;
+    align-items: flex-start;
+}
+
+.explore-textbox2 h2 {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+
+.explore-textbox2 p {
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .explore-textbox2 h2,
 .explore-textbox2 p {
-    padding-right: 20px;
+    padding-right: 10px;
+}
+
+.kids-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.kids-right-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+.kids-right-column p {
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 .explore-textbox a,
@@ -246,65 +304,6 @@ footer .link {
 }
 
 
-
-/* Exhibition page */
-#exhibition-title {
-    background: rgba(0, 0, 0, 0.6) url("../img/exhibition.jpg") center center no-repeat;
-    background-blend-mode: darken;
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.exhibition {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 6.5rem;
-}
-
-.exhibition-textbox {
-    background-color: #1B263B;
-    margin: 50px 0;
-    max-width: 100%;
-    height: 450px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.exhibition-textbox2 {
-    background-color: #6FABDD;
-}
-
-.exhibition-textbox img {
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.exhibition-text {
-    width: 70%;
-    height: auto;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.exhibition-text h2 {
-    font-size: 2.1rem;
-    margin-bottom: 20px;
-}
-
-.exhibition-text p {
-    font-size: 1.2rem;
-}
 
 
 /* About page */
@@ -332,17 +331,17 @@ footer .link {
     margin: 0px auto 60px auto;
     padding: 40px 20px;
     margin-bottom: 40px;
-    color: #1B263B;
+    color: var(--sec-color);
     font-size: 1.1rem;
 }
 .about-us-intro h2 {
     font-size: 2rem;
-    color: #0265E3;
+    color: var(--text-color);
     margin-bottom: 20px;
     text-align: center;
 }
 .get-involved-about h2 {
-   color: #fff !important;
+   color: var(--main-color) !important;
    transform: translateX(550px);
    padding: 15px 0;
    margin-bottom: 20px;
@@ -354,7 +353,7 @@ footer .link {
    margin-left: 60px;
 }
 .about-us-middle-section > div {
-    background-color: #fff;
+    background: var(--main-color);
     padding: 0;
     margin-bottom: 20px;
     display: flex;
@@ -370,7 +369,7 @@ footer .link {
 
 .about-us-middle-section h2 {
     font-size: 2rem;
-    color: #0265E3;
+    color: var(--text-color);
     margin-bottom: 15px;
     text-align: left;
 }
@@ -380,12 +379,12 @@ footer .link {
     line-height: 1.6;
     margin-bottom: 0;
     text-align: left;
-    color: #1B263B;
+    color: var(--sec-color);
     max-width: 500px;
 }
 
 .about-us-middle-section {
-    background-color: #1B263B;
+    background: var(--sec-color);
     padding: 40px 100px;
     margin-top: -20px;
     margin-bottom: 20px;
@@ -397,7 +396,6 @@ footer .link {
     flex-shrink: 0;
 }
 
-/* Contact Form */
 .contact-form {
     max-width: 400px;
     margin: 0 auto;
@@ -407,14 +405,14 @@ footer .link {
 .contact-form h2 {
     text-align: center;
     font-size: 2rem;
-    color: #1B263B;
+    color: var(--sec-color);
     margin-bottom: 30px;
 }
 
 .contact-form label {
     display: block;
     margin-bottom: 5px;
-    color: #1B263B;
+    color: var(--sec-color);
     font-size: 0.9rem;
 }
 
@@ -434,8 +432,8 @@ footer .link {
 }
 
 .contact-form button {
-    background-color: #0265E3;
-    color: white;
+    background-color: var(--text-color);
+    color: var(--main-color);
     padding: 10px 30px;
     border: none;
     border-radius: 20px;
@@ -446,8 +444,7 @@ footer .link {
 }
 
 .contact-form button:hover {
-    background-color: #0250c0;
-    transform: scaleX(1.2);
+    background-color: #2365c2;
 }
 
 
@@ -456,9 +453,6 @@ footer .link {
 
 
     /* Explore page */
-
-
-    /* Exhibition page */
 
 
     /* About page */
