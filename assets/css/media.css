@@ -105,7 +105,26 @@
     }
 
     /* About page */
+    #about-us-involment {
+        gap: 60px;
+    }
 
+    .get-involved {
+        flex-direction: row;
+        height: 200px;
+        margin: 0 6.5rem;
+    }
+
+    .get-involved img {
+        width: 40%;
+        height: 100%;
+    }
+
+    .get-involved-text {
+        width: 60%;
+        height: 100%;
+        padding: 0 50px;
+    }
 
     /* Events page */
     .events-categories {
