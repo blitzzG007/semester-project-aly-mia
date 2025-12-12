@@ -13,7 +13,7 @@
     color: var(--main-color);
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 15px 5px;
 }
 
 .places {
@@ -79,7 +79,7 @@
 #location h2 {
     font-size: 1.85rem;
     font-weight: 500;
-    margin: 1.3rem 0;
+    margin: 1.8rem 0;
     letter-spacing: 3.5px;
 }
 
@@ -97,13 +97,13 @@ iframe {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
-.address-hrs-contact>.category {
-    margin: 15px 0;
-}
-
 .category h4 {
     font-size: 1.2rem;
     margin-bottom: 8px;
+}
+
+.opening-hours {
+    margin: 30px 0;
 }
 
 .day-time {
