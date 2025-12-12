@@ -265,16 +265,14 @@ footer .link {
     color: var(--main-color);
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 4.5rem 60px;
-    position: relative;
+    gap: 15px;
+    padding: 4.5rem 0;
     justify-content: center;
 }
 
 .explore-header {
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -282,7 +280,7 @@ footer .link {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    margin: 10px;
+    margin: 5px;
     flex-shrink: 0;
 }
 
@@ -291,13 +289,13 @@ footer .link {
     height: auto;
     min-height: 200px;
     object-fit: cover;
-    margin: 10px;
+    margin-bottom: 10px;
     flex-shrink: 0;
 }
 
 .explore-textbox {
     background-color: #fff;
-    margin: 5px;
+    margin: 5px 1.5rem;
     padding: 15px;
     max-width: 480px;
     flex: 1 1 420px;
@@ -330,15 +328,12 @@ footer .link {
 
 .explore-textbox2 {
     background-color: #fff;
-    margin: 5px;
+    margin: 5px 1.5rem;
     padding: 15px;
     width: 100%;
     max-width: 980px;
     color: #1B263B;
-    display: flex;
-    gap: 15px;
     overflow: hidden;
-    align-items: flex-start;
 }
 
 .explore-textbox2 h2 {
@@ -385,6 +380,24 @@ footer .link {
 @media (min-width: 800px) {
 
     /* Explore page */
+    .explore-page {
+        padding: 4.5rem 60px;
+        gap: 10px;
+    }
 
+    .explore-textbox {
+        margin: 5px;
+    }
+
+    .explore-textbox2 {
+        margin: 5px;
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .explore-image2 {
+        margin: 10px;
+    }
 
 }
