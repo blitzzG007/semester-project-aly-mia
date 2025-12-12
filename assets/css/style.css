@@ -364,15 +364,12 @@ footer .link {
 .kids-content {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .kids-right-column {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    gap: 15px;
-    padding-top: 30px;
+    gap: 10px;
 }
 
 .kids-right-column p {
@@ -389,8 +386,6 @@ footer .link {
 .explore-textbox2 h2 {
     color: #0265E3;
 }
-
-
 
 @media (min-width: 800px) {
 
