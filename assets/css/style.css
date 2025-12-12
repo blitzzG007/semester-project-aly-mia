@@ -26,8 +26,6 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-/* Links, WE can either have them here or in link.css file */
-
 header {
     padding: 10px 0;
     background-color: var(--main-color);
@@ -243,6 +241,7 @@ footer .link {
     margin-top: 10px;
 }
 
+
 /* Scroll behavior */
 ::-webkit-scrollbar {
     width: 8px;
@@ -254,150 +253,4 @@ footer .link {
 
 ::-webkit-scrollbar-track {
     background: var(--sec-color);
-}
-
-
-/* Explore page */
-.explore-page {
-    background: rgba(0, 0, 0, 0.6) url('../img/explore-background.jpg') center no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    color: var(--main-color);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 4.5rem 0;
-    justify-content: center;
-}
-
-.explore-header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.explore-image1 {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 5px;
-    flex-shrink: 0;
-}
-
-.explore-image2 {
-    width: 200px;
-    height: auto;
-    min-height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    flex-shrink: 0;
-}
-
-.explore-textbox {
-    background-color: #fff;
-    margin: 5px 1.5rem;
-    padding: 15px;
-    max-width: 480px;
-    flex: 1 1 420px;
-    min-width: 380px;
-    color: #1B263B;
-    display: flex;
-    gap: 15px;
-    overflow: hidden;
-    align-items: flex-start;
-}
-
-.explore-textbox h2 {
-    margin-bottom: 5px;
-    font-size: 1.6rem;
-}
-
-.explore-textbox p {
-    font-size: 0.85rem;
-    line-height: 1.4;
-}
-
-.explore-textbox h2,
-.explore-textbox p {
-    padding-right: 10px;
-}
-
-.explore-textbox>div {
-    max-width: 280px;
-}
-
-.explore-textbox2 {
-    background-color: #fff;
-    margin: 5px 1.5rem;
-    padding: 15px;
-    width: 100%;
-    max-width: 980px;
-    color: #1B263B;
-    overflow: hidden;
-}
-
-.explore-textbox2 h2 {
-    margin-bottom: 5px;
-    font-size: 1.6rem;
-}
-
-.explore-textbox2 p {
-    font-size: 0.85rem;
-    line-height: 1.4;
-}
-
-.explore-textbox2 h2,
-.explore-textbox2 p {
-    padding-right: 10px;
-}
-
-.kids-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.kids-right-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.kids-right-column p {
-    font-size: 0.85rem;
-    line-height: 1.4;
-}
-
-.explore-textbox a,
-.explore-textbox2 a {
-    color: #1B263B;
-}
-
-.explore-textbox h2,
-.explore-textbox2 h2 {
-    color: #0265E3;
-}
-
-@media (min-width: 800px) {
-
-    /* Explore page */
-    .explore-page {
-        padding: 4.5rem 60px;
-        gap: 10px;
-    }
-
-    .explore-textbox {
-        margin: 5px;
-    }
-
-    .explore-textbox2 {
-        margin: 5px;
-        display: flex;
-        gap: 15px;
-        align-items: flex-start;
-    }
-
-    .explore-image2 {
-        margin: 10px;
-    }
-
 }
