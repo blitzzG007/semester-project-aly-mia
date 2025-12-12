@@ -73,6 +73,10 @@
         font-size: 1.15rem;
     }
 
+    .home-content .cta-links .cta-explore {
+        margin-left: 10px;
+    }
+
     /* Explore page */
     .explore-page {
         padding: 4.5rem 60px;
