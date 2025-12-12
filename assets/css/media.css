@@ -38,6 +38,10 @@
         width: 69%;
     }
 
+    .navbar .link {
+        margin-right: 50px;
+    }
+
     .link {
         font-size: 1.15rem;
     }
