@@ -26,7 +26,7 @@
           /></a>
           <a href="index.html" class="company-name" aria-label="Community Science Museum homepage">CSM</a>
         </div>
-        <label for="menu-check" class="menu" aria-label="Open navigation menu">
+        <label for="menu-check" class="menu">
           <i class='bx bx-menu'></i>
         </label>
         <input type="checkbox" id="menu-check">
@@ -149,7 +149,7 @@
               <div class="input-item">
                 <label for="event">Book Event:</label>
                 <select name="event" id="event" required>
-                  <option value="Event">Event..</option>
+                  <option value="" disabled selected hidden>Event..</option>
                   <option value="event-1">Visiting Professor of Aeronautics</option>
                   <option value="event-2">Robotic Labs</option>
                   <option value="event-3">Night in the Museum</option>
@@ -160,7 +160,7 @@
               <div class="input-item">
                 <label for="tour">Tour:</label>
                 <select name="tour" id="tour" required>
-                  <option value="Book Tour">Book Tour..</option>
+                  <option value="" disabled selected hidden>Book Tour..</option>
                   <option value="Morning Tour">Morning Tour</option>
                   <option value="Afternoon Tour">Afternoon Tour</option>
                   <option value="Evening Tour">Evening Tour</option>
@@ -186,7 +186,7 @@
             </div>
             <input class="cta" type="submit" value="Book Tour" aria-label="Submit booking form" />
           </form>
-        </section>
+        </div>
       </section>
     </main>
     <footer>
